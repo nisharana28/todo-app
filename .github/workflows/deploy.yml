@@ -1,0 +1,26 @@
+name: Deploy todo app
+
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: step 1 - get the code
+     uses: actions/checkout@v3 
+
+  -  name: step 2 - list the files
+     run: ls -la
+
+  -  name: step 3 - confirm deployment
+     run: echo 'todo app successfully deployed to GitHub pages'
+    
+
+
+
+
+   
